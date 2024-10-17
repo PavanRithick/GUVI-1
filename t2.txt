@@ -1,0 +1,15 @@
+
+In JavaScript, objects are fundamental data structures that allow developers to store and manage key-value pairs. These objects are used to represent real-world entities, with each key serving as a property name and the associated value being any type of data, including numbers, strings, or even functions. This flexibility makes objects central to how JavaScript applications are built, offering a versatile way to organize both simple and complex data.
+
+Internal Representation of Objects
+Behind the scenes, JavaScript engines like Google’s V8 optimize object storage and access. One of the main techniques is the use of hidden classes (or shapes). These are internal structures that track the layout of an object’s properties. When two objects have the same properties defined in the same order, they share the same hidden class, which allows the engine to speed up access to those properties by reducing redundancy.
+
+In addition, objects can be stored in two primary ways, depending on their complexity. Simple objects are stored using fast property access, which allows for quick lookups when the structure of the object doesn’t change much. On the other hand, if an object undergoes frequent changes—such as adding or removing properties—the engine switches to a more flexible, slower storage method called dictionary mode. This dynamic nature allows for flexibility but can impact performance if not managed carefully.
+
+Dynamic Nature and Performance
+JavaScript objects are dynamic by design, which means developers can easily add, modify, or remove properties on the fly. However, this flexibility comes with performance implications. Each time an object’s structure changes, the engine may need to create new hidden classes or switch the storage mode, which can slow down property access and object performance. Keeping objects static, whenever possible, helps the engine maintain efficient performance.
+
+Prototypes and Inheritance
+In JavaScript, objects also use prototypal inheritance. This means every object has a hidden link to another object, known as its prototype. When a property is accessed and isn’t found on the object itself, the engine looks up the prototype chain to find it. This mechanism allows for inheritance between objects, reducing redundancy and promoting code reuse.
+
+In conclusion, objects in JavaScript are powerful tools with a flexible internal structure. Understanding their internal workings—like hidden classes and prototypes—can help developers write more efficient and optimized code.

@@ -1,0 +1,6 @@
+HTTP/1.1 and HTTP/2 bring some key differences in how browsers handle requests, which can noticeably impact the performance of JavaScript-heavy websites.
+
+With HTTP/1.1, each connection can only handle one request at a time, causing delays when multiple requests are made, like when loading several JavaScript files. This can slow down page load times, as other resources have to wait their turn. Developers often had to use tricks like opening multiple connections or splitting resources across domains (called domain sharding) to get around this limitation. On top of that, HTTP/1.1 doesn't prioritize resources, so all files are treated the same, which can delay the loading of more important JavaScript files.
+
+HTTP/2 addresses these issues by allowing multiple requests to be handled at once on the same connection, thanks to multiplexing. This means your JavaScript files load faster without needing any special workarounds. HTTP/2 also lets browsers prioritize important files over less critical ones, making the overall loading process smoother. Plus, with header compression in HTTP/2, repeated data like cookies and headers are minimized, making API calls more efficient.
+In short, HTTP/2 offers a big performance boost for JavaScript-based websites, making everything load faster and more efficiently compared to HTTP/1.1.
