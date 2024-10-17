@@ -1,0 +1,12 @@
+
+IP Address
+An IP address (Internet Protocol address) is a unique identifier for devices on a network, allowing them to communicate over the internet. It functions like a digital address, helping direct data to the right destination. There are two main types: IPv4, which uses four numbers separated by periods (e.g., 192.168.1.1), and IPv6, which uses longer addresses with colons (e.g., 2001:0db8:85a3:0000:0000:8a2e:0370:7334). IPv6 was introduced to accommodate the growing number of devices connected to the internet.
+
+Port
+A port is a virtual endpoint that helps manage network connections on a device. Each port is identified by a number ranging from 0 to 65535, allowing multiple applications to use network resources simultaneously. For example, web traffic commonly uses port 80 for HTTP and port 443 for HTTPS. The combination of an IP address and port number ensures data reaches the correct application on a device.
+
+HTTP Methods
+HTTP methods are request methods used by clients (like browsers) to communicate with servers via the Hypertext Transfer Protocol (HTTP). Common methods include GET (retrieve data), POST (send data), PUT (update data), DELETE (remove data), and PATCH (partially modify data). Each method serves a specific purpose in data transmission and manipulation on the web.
+
+MAC Address
+A MAC address (Media Access Control address) is a unique identifier assigned to a device's network interface for communication within a local network. Represented as six pairs of hexadecimal digits (e.g., 00:1A:2B:3C:4D:5E), the MAC address remains constant and enables devices to identify and communicate with each other directly, playing a crucial role in managing local network traffic.
